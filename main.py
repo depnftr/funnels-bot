@@ -11,12 +11,11 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def start_handler(message: Message):
-
     keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
             [InlineKeyboardButton(text="🎮 Играть", url="https://t.me/FunnelsTV")],
             [InlineKeyboardButton(text="📺 Канал", url="https://t.me/FunnelsTV")],
-            [InlineKeyboardButton(text="🎁 Пополнить инвентарь", url="https://t.me/funnelsbank")]
+            [InlineKeyboardButton(text="🎁 Пополнить инвентарь", url="https://t.me/funnelsbank")],
         ]
     )
 
